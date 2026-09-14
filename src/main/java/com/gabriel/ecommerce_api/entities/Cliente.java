@@ -48,4 +48,10 @@ public class Cliente {
 
     @UpdateTimestamp
     private LocalDateTime ultimaAlteracao;
+
+    public Cliente(String nome, Endereco endereco, LocalDate dataNascimento) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.dataNascimento = dataNascimento;
+    }
 }
